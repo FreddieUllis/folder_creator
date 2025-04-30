@@ -1,5 +1,5 @@
 const FONT_BUTTON: String = (
-	"res://addons/FolderCreator/Art/Fonts/" + 
+	"res://addons/folder_creator/Art/Fonts/" + 
 	"PlaywriteITModerna/static/PlaywriteITModerna-Regular.ttf"
 )
 const FONT_SUCCESS: String = "The font was uploaded successfully"
