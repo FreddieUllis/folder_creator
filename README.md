@@ -3,40 +3,41 @@
 A Godot Engine 4 Editor plugin to scaffold a standard project folder layout with a single click.
 
 ## Features
-- **Toolbar Button**: Adds a **Create a structure** button to the editor toolbar (uses `BUTTON_CREATE` in `constants.gd`) :contentReference[oaicite:0]{index=0}  
-- **Configurable Main Folders**: Prompts for a **Structure Name** and presents checkboxes for **Scenes**, **Scripts**, **Resources**, and **Art** (defined in `FOLDERS`) :contentReference[oaicite:1]{index=1}  
-- **Art Sub-Structure**: Always generates **Fonts**, **Images**, and **Sounds** under any selected **Art** folder (from `SUBFOLDERS`) :contentReference[oaicite:2]{index=2}  
-- **Filesystem Refresh**: Rescans the FileSystem dock immediately after creation via `get_resource_filesystem().scan()` :contentReference[oaicite:3]{index=3}  
+- **Toolbar Button**: Adds a **Create a structure** button to the editor toolbar (uses `BUTTON_CREATE` in `constants.gd`) 
+- **Configurable Main Folders**: Prompts for a **Structure Name** and presents checkboxes for **Scenes**, **Scripts**, **Resources**, and **Art** (defined in `FOLDERS`)
+- **Art Sub-Structure**: Always generates **Fonts**, **Images**, and **Sounds** under any selected **Art** folder (from `SUBFOLDERS`)
+- **Filesystem Refresh**: Rescans the FileSystem dock immediately after creation via `get_resource_filesystem().scan()` 
 
 ## Requirements
-- Godot Engine 4.0 or higher (the plugin extends `EditorPlugin`) :contentReference[oaicite:4]{index=4}
+- Godot Engine 4.0 or higher (the plugin extends `EditorPlugin`)
 
 ## Installation
 1. Clone or copy this repository into your project’s `res://addons/folder_creator/`.  
 2. In Godot, open **Project → Project Settings → Plugins**, find **Folder Creator**, and click **Enable**.  
-3. The plugin will preload `res://addons/folder_creator/Scripts/constants.gd`, so the folder must be named `folder_creator`. :contentReference[oaicite:5]{index=5}
+3. The plugin will preload `res://addons/folder_creator/Scripts/constants.gd`, so the folder must be named `folder_creator`.
 
 ## Usage
 1. Click the **Create a structure** icon in the toolbar.  
 2. Enter the desired **Structure Name**.  
 3. Check which of **Scenes**, **Scripts**, **Resources**, and **Art** you want to generate.  
-4. Click **Create a structure**—your folders will be created under `res://YourStructureName/` and appear immediately in the FileSystem dock. :contentReference[oaicite:6]{index=6}
+4. Click **Create a structure**—your folders will be created under `res://YourStructureName/` and appear immediately in the FileSystem dock.
 
 ## Configuration
 To customize folder names, dialog titles, button labels, or messages, edit `Scripts/constants.gd`:  
+
 ```gdscript
 const FOLDERS = { … }
 const SUBFOLDERS = { … }
 const BUTTON_CREATE = "Create a structure"
 const DIALOG_TITLE = "Create a folder structure"
 # etc.
-``` :contentReference[oaicite:7]{index=7}
+```
 
 ## Contributing
 Pull requests, issues, and suggestions are welcome. Please fork the repo and work on feature branches.
 
 ## License
-This project is licensed under the MIT License. :contentReference[oaicite:8]{index=8}
+This project is licensed under the MIT License.
 
 --------------
 # Folder Creator
