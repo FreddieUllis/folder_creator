@@ -2,7 +2,7 @@
 extends EditorPlugin
 class_name FolderCreatorPlugin
 
-var constants := preload("res://addons/folder_creator/Scripts/constants.gd")
+const constants := preload("res://addons/folder_creator/Scripts/constants.gd")
 
 var _btn: Button
 var _dialog: ConfirmationDialog  
