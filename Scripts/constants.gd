@@ -12,7 +12,6 @@ const SUBFOLDERS := {
 	"Art": ["Fonts", "Images", "Sounds"],
 }
 
-# подписи / сообщения
 const BUTTON_CREATE : String = "Create a structure"
 const DIALOG_TITLE  : String = "Create a folder structure"
 const NAME_LABEL    : String = "Structure Name:"
