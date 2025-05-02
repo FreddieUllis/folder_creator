@@ -1,5 +1,7 @@
 # Folder Creator
 
+[![Godot 4.x](https://img.shields.io/badge/Godot-4.x-blue.svg)](https://godotengine.org/)  
+
 A Godot Engine 4 Editor plugin to scaffold a standard project folder layout with a single click.
 
 ## Features
